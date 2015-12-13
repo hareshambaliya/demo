@@ -1,0 +1,112 @@
+
+C:\Program Files (x86)\Microsoft Visual Studio 14.0>git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+C:\Program Files (x86)\Microsoft Visual Studio 14.0>git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+
+
+C:\Program Files (x86)\Microsoft Visual Studio 14.0>git config --global user.name "Haresh Ambaliya"
+
+C:\Program Files (x86)\Microsoft Visual Studio 14.0>git config --global user.email "hareshambaliya@gmail.com"
+
+C:\Program Files (x86)\Microsoft Visual Studio 14.0>git config --global --list
+gui.recentrepo=D:/Projects/OpenLiveWriter
+user.name=Haresh Ambaliya
+user.email=hareshambaliya@gmail.com
+
+C:\Program Files (x86)\Microsoft Visual Studio 14.0>cd\
+
+C:\>d:
+
+D:\>cd Projects
+
+D:\Projects>mkdir SearchEngine
+
+D:\Projects>cd SearchEngine
+
+D:\Projects\SearchEngine>git init
+Initialized empty Git repository in D:/Projects/SearchEngine/.git/
+
+D:\Projects\SearchEngine>git add *.txt
+
+D:\Projects\SearchEngine>git commit -m "commit changes"
+
+D:\Projects\SearchEngine>git log
+
+D:\Projects\SearchEngine>git shortlog
