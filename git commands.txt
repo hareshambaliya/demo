@@ -234,4 +234,99 @@ Fast-forward
  2 files changed, 7 insertions(+), 1 deletion(-)
  create mode 100644 My Text File 4.txt
 
+
+D:\Projects\SearchEngine>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Projects\SearchEngine>git commit -m "git command committed"
+On branch master
+Changes not staged for commit:
+        modified:   git commands.txt
+
+no changes added to commit
+
+D:\Projects\SearchEngine>git add *.txt
+
+D:\Projects\SearchEngine>git commit -m "git command committed"
+[master 22f910d] git command committed
+ 1 file changed, 125 insertions(+)
+
+D:\Projects\SearchEngine>git remote add origin https://github.com/hareshambaliya/demo.git
+
+D:\Projects\SearchEngine>git push -u origin master
+Username for 'https://github.com': hareshambaliya@gmail.com
+Password for 'https://hareshambaliya@gmail.com@github.com':
+To https://github.com/hareshambaliya/demo.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/hareshambaliya/demo.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Projects\SearchEngine>git pull
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/hareshambaliya/demo
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+D:\Projects\SearchEngine>git push -u origin master
+Username for 'https://github.com': hareshambaliya
+Password for 'https://hareshambaliya@github.com':
+To https://github.com/hareshambaliya/demo.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/hareshambaliya/demo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\Projects\SearchEngine>git push --help
+Launching default browser to display HTML ...
+
+D:\Projects\SearchEngine>git push -u origin master --force
+Username for 'https://github.com': hareshambaliya@gmail.com
+Password for 'https://hareshambaliya@gmail.com@github.com':
+Counting objects: 26, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (22/22), done.
+Writing objects: 100% (26/26), 4.41 KiB | 0 bytes/s, done.
+Total 26 (delta 9), reused 0 (delta 0)
+To https://github.com/hareshambaliya/demo.git
+ + aeec884...22f910d master -> master (forced update)
+Branch master set up to track remote branch master from origin.
+
+D:\Projects\SearchEngine>git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/hareshambaliya/demo
+   22f910d..ec45354  master     -> origin/master
+Updating 22f910d..ec45354
+Fast-forward
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.md
+
 D:\Projects\SearchEngine>
