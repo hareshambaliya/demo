@@ -108,5 +108,130 @@ D:\Projects\SearchEngine>git add *.txt
 D:\Projects\SearchEngine>git commit -m "commit changes"
 
 D:\Projects\SearchEngine>git log
+commit 214bb0380f6317281defd53b478e52d52b0f8d6c
+Author: Haresh Ambaliya <hareshambaliya@gmail.com>
+Date:   Sun Dec 13 21:29:32 2015 +0530
+
+    Add file and commit changes
+
+commit dd341f911a55f26b55b6410f355cec357d99ff0c
+Author: Haresh Ambaliya <hareshambaliya@gmail.com>
+Date:   Sun Dec 13 21:23:52 2015 +0530
+
+    Additional changes
+
+commit 04ae69a3be8fc30eeb66aceb3bed8dce01530627
+Author: Haresh Ambaliya <hareshambaliya@gmail.com>
+Date:   Sun Dec 13 20:55:21 2015 +0530
+
+    initial commit to master branch
 
 D:\Projects\SearchEngine>git shortlog
+Haresh Ambaliya (3):
+      initial commit to master branch
+      Additional changes
+      Add file and commit changes
+
+
+D:\Projects\SearchEngine>git shortlog
+Haresh Ambaliya (3):
+      initial commit to master branch
+      Additional changes
+      Add file and commit changes
+
+
+D:\Projects\SearchEngine>git stash
+Saved working directory and index state WIP on master: 214bb03 Add file and commit changes
+HEAD is now at 214bb03 Add file and commit changes
+
+D:\Projects\SearchEngine>git stash apply
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   My Text File 2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        git commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\Projects\SearchEngine>git add *.txt
+
+D:\Projects\SearchEngine>git commit -m "version 1.0 commited"
+[master 428494a] version 1.0 commited
+ 2 files changed, 116 insertions(+), 1 deletion(-)
+ create mode 100644 git commands.txt
+
+D:\Projects\SearchEngine>git log
+commit 428494a06cff7f8a7536055ca26d9275e2fd3a72
+Author: Haresh Ambaliya <hareshambaliya@gmail.com>
+Date:   Sun Dec 13 21:47:42 2015 +0530
+
+    version 1.0 commited
+
+commit 214bb0380f6317281defd53b478e52d52b0f8d6c
+Author: Haresh Ambaliya <hareshambaliya@gmail.com>
+Date:   Sun Dec 13 21:29:32 2015 +0530
+
+    Add file and commit changes
+
+commit dd341f911a55f26b55b6410f355cec357d99ff0c
+Author: Haresh Ambaliya <hareshambaliya@gmail.com>
+Date:   Sun Dec 13 21:23:52 2015 +0530
+
+    Additional changes
+
+commit 04ae69a3be8fc30eeb66aceb3bed8dce01530627
+Author: Haresh Ambaliya <hareshambaliya@gmail.com>
+Date:   Sun Dec 13 20:55:21 2015 +0530
+
+    initial commit to master branch
+
+D:\Projects\SearchEngine>git shortlog
+Haresh Ambaliya (4):
+      initial commit to master branch
+      Additional changes
+      Add file and commit changes
+      version 1.0 commited
+
+
+D:\Projects\SearchEngine>git branch v2.0
+
+D:\Projects\SearchEngine>git checkout v2.0
+Switched to branch 'v2.0'
+
+D:\Projects\SearchEngine>git add *.txt
+
+D:\Projects\SearchEngine>git commit -m "V2 changes"
+[v2.0 9c7275f] V2 changes
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 My Text File 4.txt
+
+D:\Projects\SearchEngine>git add *.txt
+
+D:\Projects\SearchEngine>git commit -m "v2 additional changes"
+[v2.0 fffe89b] v2 additional changes
+ 1 file changed, 3 insertions(+)
+
+D:\Projects\SearchEngine>git checkout master
+Switched to branch 'master'
+
+D:\Projects\SearchEngine>git checkout v2.0
+Switched to branch 'v2.0'
+
+D:\Projects\SearchEngine>git checkout master
+Switched to branch 'master'
+
+D:\Projects\SearchEngine>git merge v2.0
+Updating 428494a..fffe89b
+Fast-forward
+ My Text File 3.txt | 4 +++-
+ My Text File 4.txt | 4 ++++
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 100644 My Text File 4.txt
+
+D:\Projects\SearchEngine>
